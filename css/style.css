@@ -1,0 +1,1738 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../img/米色紙漿背景.jpeg);
+  position: relative;
+}
+
+body .box {
+  width: 100%;
+  height: 500px;
+  background-color: cornflowerblue;
+}
+
+@font-face {
+  body {
+    font-family: "KouzanBrushFont";
+    src: url(../fonts/字體/毛筆字體.ttf);
+  }
+}
+
+body video {
+  width: 100%;
+  height: auto;
+}
+
+body .overlord {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+body .overlord .moonbox {
+  position: relative;
+  width: 100%;
+  height: 285vh;
+  margin-top: -84.04vh;
+  margin-bottom: 100px;
+  background-image: url(../img/新月亮.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+body .overlord .cloud01 {
+  position: absolute;
+  width: 60%;
+  height: 60vh;
+  margin-top: -154vh;
+  margin-left: -5%;
+  background-image: url(../img/左雲.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  page-break-before: always;
+  z-index: 3;
+}
+
+body .overlord .cloud02 {
+  position: absolute;
+  width: 60%;
+  height: 60vh;
+  margin-top: -145vh;
+  margin-left: 50%;
+  background-image: url(../img/右雲.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  page-break-before: always;
+  z-index: 3;
+}
+
+body .overlord .stoneleft {
+  position: absolute;
+  width: 30%;
+  height: 70vh;
+  margin-top: -87vh;
+  margin-left: 35%;
+  background-image: url(../img/霸王.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+body .overlord .stoneright {
+  position: absolute;
+  width: 30%;
+  height: 65vh;
+  margin-top: -80vh;
+  margin-left: 50%;
+  background-image: url(../img/別姬.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+body .overlord .base {
+  position: absolute;
+  width: 100%;
+  height: 20vh;
+  background-image: url(../img/展示台.png);
+  margin-top: -25vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 0;
+}
+
+body .overlord .fontbox {
+  position: absolute;
+  width: 100%;
+  margin-left: -33%;
+  margin-top: -90vh;
+  letter-spacing: 0.25em;
+  line-height: 2;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 0.01em 0.05em #fff;
+  color: #707070;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  z-index: 99;
+  font-family: SimSun;
+}
+
+body .inc {
+  position: absolute;
+  width: 100%;
+  height: 35vh;
+  background-image: url(../img/電腦墨水.png);
+  margin-top: -5vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 0;
+}
+
+@media (max-width: 1500px) and (min-width: 1200px) {
+  body .overlord .moonbox {
+    width: 100%;
+    height: 285vh;
+    margin-top: -88vh;
+    margin-bottom: -50px;
+  }
+  body .overlord .cloud01 {
+    position: absolute;
+    width: 50%;
+    height: 50vh;
+    margin-top: -145vh;
+    margin-left: 0%;
+  }
+  body .overlord .cloud02 {
+    width: 50%;
+    height: 50vh;
+    margin-top: -135vh;
+    margin-left: 50%;
+  }
+  body .overlord .stoneleft {
+    position: absolute;
+    width: 25%;
+    margin-top: -95vh;
+    margin-left: 35%;
+  }
+  body .overlord .stoneright {
+    position: absolute;
+    width: 30%;
+    margin-top: -90vh;
+    margin-left: 50%;
+  }
+  body .overlord .fontbox {
+    position: absolute;
+    width: 100%;
+    margin-top: -90vh;
+    font-size: 30px;
+  }
+  body .overlord .base {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/展示台.png);
+    margin-top: -35vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+  body .overlord .moonbox {
+    width: 100%;
+    height: 285vh;
+    margin-top: -88vh;
+    margin-bottom: -50px;
+  }
+  body .overlord .cloud01 {
+    width: 50%;
+    height: 50vh;
+    margin-top: -140vh;
+    margin-left: 0%;
+  }
+  body .overlord .cloud02 {
+    width: 50%;
+    height: 50vh;
+    margin-top: -135vh;
+    margin-left: 50%;
+  }
+  body .overlord .stoneleft {
+    position: absolute;
+    width: 25%;
+    height: 51vh;
+    margin-top: -77vh;
+    margin-left: 35%;
+  }
+  body .overlord .stoneright {
+    position: absolute;
+    width: 25%;
+    height: 50vh;
+    margin-top: -75vh;
+    margin-left: 50%;
+  }
+  body .overlord .fontbox {
+    position: absolute;
+    width: 100%;
+    margin-top: -90vh;
+    font-size: 30px;
+  }
+  body .overlord .base {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/展示台.png);
+    margin-top: -35vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+  body .overlord .moonbox {
+    width: 100%;
+    height: 285vh;
+    margin-top: -88vh;
+    margin-bottom: -50px;
+  }
+  body .overlord .cloud01 {
+    width: 50%;
+    height: 50vh;
+    margin-top: -140vh;
+    margin-left: 0%;
+  }
+  body .overlord .cloud02 {
+    width: 50%;
+    height: 50vh;
+    margin-top: -135vh;
+    margin-left: 50%;
+  }
+  body .overlord .stoneleft {
+    position: absolute;
+    width: 20%;
+    height: 41vh;
+    margin-top: -77vh;
+    margin-left: 35%;
+  }
+  body .overlord .stoneright {
+    position: absolute;
+    width: 20%;
+    height: 40vh;
+    margin-top: -77vh;
+    margin-left: 50%;
+  }
+  body .overlord .fontbox {
+    position: absolute;
+    width: 100%;
+    margin-top: -110vh;
+    margin-left: -20vw;
+    font-size: 30px;
+  }
+  body .overlord .base {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/展示台.png);
+    margin-top: -52vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 450px) {
+  body .overlord .moonbox {
+    width: 100%;
+    height: 205vh;
+    margin-top: -68vh;
+    margin-bottom: 100px;
+  }
+  body .overlord .cloud01 {
+    width: 50%;
+    height: 50vh;
+    margin-top: -100vh;
+    margin-left: 0%;
+  }
+  body .overlord .cloud02 {
+    width: 50%;
+    height: 50vh;
+    margin-top: -95vh;
+    margin-left: 50%;
+  }
+  body .overlord .stoneleft {
+    position: absolute;
+    width: 20%;
+    height: 41vh;
+    margin-top: -47vh;
+    margin-left: 35%;
+  }
+  body .overlord .stoneright {
+    position: absolute;
+    width: 20%;
+    height: 40vh;
+    margin-top: -47vh;
+    margin-left: 50%;
+  }
+  body .overlord .fontbox {
+    position: absolute;
+    width: 100%;
+    margin-top: -75vh;
+    margin-left: -20vw;
+    font-size: 30px;
+  }
+  body .overlord .base {
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/展示台.png);
+    margin-top: -22vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 375px) {
+  body .overlord .moonbox {
+    width: 100%;
+    height: 205vh;
+    margin-top: -68vh;
+    margin-bottom: 100px;
+  }
+  body .overlord .cloud01 {
+    width: 50%;
+    height: 50vh;
+    margin-top: -115vh;
+    margin-left: 0%;
+  }
+  body .overlord .cloud02 {
+    width: 50%;
+    height: 50vh;
+    margin-top: -110vh;
+    margin-left: 50%;
+  }
+  body .overlord .stoneleft {
+    position: absolute;
+    width: 15%;
+    height: 41vh;
+    margin-top: -50vh;
+    margin-left: 35%;
+  }
+  body .overlord .stoneright {
+    position: absolute;
+    width: 15%;
+    height: 40vh;
+    margin-top: -50vh;
+    margin-left: 50%;
+  }
+  body .overlord .fontbox {
+    position: absolute;
+    width: 100%;
+    margin-top: -90vh;
+    margin-left: -20vw;
+    font-size: 20px;
+  }
+  body .overlord .base {
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/展示台.png);
+    margin-top: -40vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  body .overlord .moonbox {
+    width: 100%;
+    height: 180vh;
+    margin-top: -68vh;
+    margin-bottom: 100px;
+  }
+  body .overlord .cloud01 {
+    width: 50%;
+    height: 50vh;
+    margin-top: -105vh;
+    margin-left: 0%;
+  }
+  body .overlord .cloud02 {
+    width: 50%;
+    height: 50vh;
+    margin-top: -100vh;
+    margin-left: 50%;
+  }
+  body .overlord .stoneleft {
+    position: absolute;
+    width: 20%;
+    height: 31vh;
+    margin-top: -38vh;
+    margin-left: 35%;
+  }
+  body .overlord .stoneright {
+    position: absolute;
+    width: 20%;
+    height: 30vh;
+    margin-top: -38vh;
+    margin-left: 50%;
+  }
+  body .overlord .fontbox {
+    position: absolute;
+    width: 100%;
+    margin-top: -75vh;
+    margin-left: -14vw;
+    font-size: 20px;
+    text-shadow: 0.01em 0.05em #fff;
+  }
+  body .overlord .base {
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/展示台.png);
+    margin-top: -22vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+}
+
+body .gallery {
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin-top: 25vh;
+}
+
+body .gallery .gallerybox {
+  width: 100%;
+  height: 320px;
+}
+
+body .gallery .gallerybox h1 {
+  width: 550px;
+  height: 90px;
+  font-size: 150px;
+  font-weight: 300;
+  letter-spacing: 90px;
+  font-family: KouzanBrushFont;
+  color: #707070;
+  padding-top: 52px;
+  margin-left: 200px;
+}
+
+body .gallery .gallerybox h2 {
+  width: 310px;
+  height: 60px;
+  font-size: 60px;
+  font-weight: 300;
+  color: #a69e96;
+  margin-top: 165px;
+  margin-left: 300px;
+}
+
+body .gallery .swiperbox {
+  width: 100%;
+  height: 640px;
+  position: relative;
+}
+
+body .gallery .swiperbox .swiper-pic {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 4) {
+  margin-top: 15px;
+  height: 400px;
+  width: 470px;
+}
+
+body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 3) {
+  margin-top: 235px;
+  height: 365px;
+  width: 365px;
+}
+
+body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 2) {
+  margin-top: 95px;
+  width: 360px;
+  height: 360px;
+}
+
+body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 1) {
+  margin-top: 50px;
+  height: 350px;
+  width: 300px;
+}
+
+body .gallery .swiperbox .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fc5151;
+  /* Center slide text vertically */
+}
+
+body .gallery .swiperbox .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .gallery .swiperbox .black-box {
+  width: 590px;
+  height: 100%;
+  background-color: rgba(107, 107, 107, 0.928);
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  body .gallery .gallerybox h1 {
+    width: 100px;
+    height: 500px;
+    margin-left: 45%;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    letter-spacing: 20px;
+    font-size: 80px;
+  }
+  body .gallery .gallerybox h2 {
+    width: 310px;
+    height: 60px;
+    font-size: 60px;
+    margin-top: -250px;
+    margin-left: 60px;
+  }
+  body .gallery .swiperbox {
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+  body .gallery .swiperbox .swiper-pic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 4) {
+    margin-top: 3px;
+    height: 300px;
+    width: 370px;
+  }
+  body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 3) {
+    margin-top: 110px;
+    height: 265px;
+    width: 265px;
+  }
+  body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 2) {
+    margin-top: 38px;
+    width: 260px;
+    height: 260px;
+  }
+  body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 1) {
+    margin-top: 20px;
+    height: 250px;
+    width: 200px;
+  }
+  body .gallery .swiperbox .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+  }
+  body .gallery .swiperbox .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .gallery .swiperbox .black-box {
+    width: 375px;
+    height: 375px;
+    top: -30%;
+    background-color: rgba(107, 107, 107, 0.928);
+  }
+}
+
+@media (max-width: 375px) {
+  body .gallery .gallerybox h1 {
+    width: 100px;
+    height: 500px;
+    margin-left: 40%;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    letter-spacing: 20px;
+    font-size: 80px;
+  }
+  body .gallery .gallerybox h2 {
+    width: 150px;
+    height: 40px;
+    font-size: 40px;
+    margin-top: -223px;
+    margin-left: 75px;
+  }
+  body .gallery .swiperbox {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+  }
+  body .gallery .swiperbox .swiper-pic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 4) {
+    margin-top: 5px;
+    height: 240px;
+    width: 240px;
+  }
+  body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 3) {
+    margin-top: 60px;
+    height: 195px;
+    width: 195px;
+  }
+  body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 2) {
+    margin-top: 40px;
+    width: 190px;
+    height: 190px;
+  }
+  body .gallery .swiperbox .swiper-pic .swiper-slide:nth-child(4n + 1) {
+    margin-top: 1px;
+    height: 170px;
+    width: 150px;
+  }
+  body .gallery .swiperbox .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+  }
+  body .gallery .swiperbox .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .gallery .swiperbox .black-box {
+    width: 250px;
+    height: 250px;
+    top: -30%;
+    background-color: rgba(107, 107, 107, 0.928);
+  }
+}
+
+body .mountain {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+body .mountain .mountainfont {
+  width: 100%;
+  height: 100vh;
+  margin-top: 8%;
+  font-family: KouzanBrushFont;
+  position: absolute;
+  white-space: nowrap;
+}
+
+body .mountain .mountainfont .len {
+  margin-left: 10vw;
+}
+
+body .mountain .mountainfont .len h2 {
+  font-size: 50px;
+  color: #808080;
+  font-weight: normal;
+}
+
+body .mountain .mountainfont .len #len1 {
+  margin-top: 0%;
+}
+
+body .mountain .mountainfont .len #len2 {
+  padding-top: 5vh;
+}
+
+body .mountain .mountainfont h1 {
+  position: absolute;
+  right: 5%;
+  margin: -5%;
+  font-size: 140px;
+  font-weight: normal;
+  color: #707070;
+}
+
+body .mountain .mask1 {
+  background: url("../img/山電腦版.png") no-repeat top center;
+  background-size: cover;
+  -webkit-mask: url("../img/山電腦版.png") no-repeat center center;
+  -webkit-mask: url("../img/山電腦版.png") no-repeat center center;
+  -webkit-mask-size: contain;
+}
+
+body .mountain .mask2 {
+  display: none;
+}
+
+@media (max-width: 1500px) and (min-width: 900px) {
+  body .mountain .mountainfont .len {
+    margin-left: 10vw;
+  }
+  body .mountain .mountainfont .len h2 {
+    font-size: 30px;
+    color: #808080;
+    font-weight: normal;
+  }
+  body .mountain .mountainfont .len #len1 {
+    margin-top: -5vh;
+  }
+  body .mountain .mountainfont .len #len2 {
+    padding-top: -5vh;
+  }
+  body .mountain .mountainfont h1 {
+    font-size: 100px;
+    margin-right: 10px;
+  }
+  body .mountain .mask1 {
+    margin-top: 20vh;
+  }
+  body .mountain .mask3 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 769px) {
+  body .mountain .mountainfont .len {
+    margin-left: 10vw;
+  }
+  body .mountain .mountainfont .len h2 {
+    font-size: 30px;
+    color: #808080;
+    font-weight: normal;
+  }
+  body .mountain .mountainfont .len #len1 {
+    margin-top: -5vh;
+  }
+  body .mountain .mountainfont .len #len2 {
+    padding-top: -5vh;
+  }
+  body .mountain .mountainfont h1 {
+    font-size: 100px;
+  }
+  body .mountain .mask1 {
+    margin-top: 30vh;
+    margin-right: 10px;
+  }
+  body .mountain .mask3 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  body .mountain .mountainfont {
+    width: 100%;
+    height: 100vh;
+    margin-top: -20%;
+    font-family: KouzanBrushFont;
+    position: absolute;
+    white-space: nowrap;
+  }
+  body .mountain .mountainfont .len {
+    margin-left: 35vw;
+    margin-top: 30vh;
+  }
+  body .mountain .mountainfont .len h2 {
+    font-size: 35px;
+    color: black;
+    font-weight: normal;
+  }
+  body .mountain .mountainfont .len #len1 {
+    margin-top: 0%;
+  }
+  body .mountain .mountainfont .len #len2 {
+    padding-top: 5vh;
+  }
+  body .mountain .mountainfont h1 {
+    position: absolute;
+    right: 83%;
+    top: 30%;
+    font-size: 100px;
+    font-weight: normal;
+    color: #707070;
+  }
+  body .mountain .mask1 {
+    display: none;
+  }
+  body .mountain .mask2 {
+    margin-top: 20vh;
+    width: 150vw;
+    margin-left: 0vw;
+    display: block;
+    background: url("../img/山平板遮罩.png") no-repeat top center;
+    background-size: cover;
+    -webkit-mask: url("../img/山平板遮罩.png") no-repeat center center;
+    mask: url("../img/山平板遮罩.png") no-repeat center center;
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    -webkit-mask-position: 80% 75%;
+            mask-position: 80% 75%;
+    -webkit-mask-size: cover;
+  }
+  body .mountain .mask3 {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  body .mountain .mountainfont {
+    width: 100%;
+    height: 100vh;
+    margin-top: -10vh;
+    font-family: KouzanBrushFont;
+    position: absolute;
+    white-space: nowrap;
+  }
+  body .mountain .mountainfont .len {
+    margin-left: 40vw;
+    margin-top: 32vh;
+  }
+  body .mountain .mountainfont .len h2 {
+    font-size: 35px;
+    color: black;
+    font-weight: 100;
+    line-height: 1em;
+  }
+  body .mountain .mountainfont .len #len1 {
+    margin-top: 0%;
+  }
+  body .mountain .mountainfont .len #len2 {
+    padding-top: 5vh;
+  }
+  body .mountain .mountainfont h1 {
+    position: absolute;
+    right: 75%;
+    top: 20%;
+    font-size: 80px;
+    font-weight: normal;
+    color: #707070;
+  }
+  body .mountain .mask1 {
+    display: none;
+  }
+  body .mountain .mask2 {
+    display: none;
+  }
+  body .mountain .mask3 {
+    margin-top: 30vh;
+    height: 100vh;
+    width: 150vw;
+    margin-left: 0vw;
+    display: block;
+    background: url("../img/山手機遮罩.png") no-repeat top center;
+    background-size: cover;
+    -webkit-mask: url("../img/山手機遮罩.png") no-repeat center center;
+    mask: url("../img/山手機遮罩.png") no-repeat center center;
+    mask-size: contain;
+    -webkit-mask-size: cover;
+  }
+}
+
+.process {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.process .titlebox {
+  width: 100%;
+  height: 275px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.process .titlebox h1 {
+  font-size: 95px;
+  letter-spacing: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #707070;
+  font-family: KouzanBrushFont;
+}
+
+.process .titlebox h2 {
+  position: absolute;
+  font-size: 35px;
+  margin-top: 135px;
+  margin-left: 70%;
+  font-weight: normal;
+  text-align: center;
+  font-family: "KouzanBrushFont";
+}
+
+.process .bar {
+  width: 80.1%;
+  height: 2px;
+  background-color: #707070;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.process .process01box {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 7%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+.process .process01box .vdo {
+  position: relative;
+  width: 90%;
+  height: 90%;
+}
+
+.process .process01box .vdo .img_01 {
+  width: 76%;
+  height: 76%;
+  border-radius: 50px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+.process .process01box .vdo .img_01 video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.process .process01box .vdo .inc {
+  position: absolute;
+  width: 90%;
+  height: 130%;
+  margin-top: -9%;
+  margin-left: -10%;
+  z-index: 99;
+  background-image: url(../img/hover潑墨.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.process .process01box .vdorwd {
+  display: none;
+}
+
+.process .process01box .fontbox_01 {
+  width: 50%;
+}
+
+.process .process01box .fontbox_01 .num {
+  width: 100%;
+  font-size: 120px;
+  color: #bba78f;
+  text-align: right;
+  font-weight: normal;
+  font-family: KouzanBrushFont;
+}
+
+.process .process01box .fontbox_01 h1 {
+  width: calc(100% - 50px);
+  font-size: 80px;
+  color: #707070;
+  font-family: KouzanBrushFont;
+  margin-top: -70px;
+  font-weight: normal;
+  text-align: right;
+}
+
+.process .process01box .fontbox_01 .font01 {
+  width: 100%;
+  margin-left: -80px;
+  margin-top: -10px;
+  font-size: 36px;
+  white-space: pre-wrap;
+  color: #707070;
+  z-index: 999;
+}
+
+.process .process02box {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+.process .process02box .vdo {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  right: -15%;
+}
+
+.process .process02box .vdo .img_02 {
+  width: 76%;
+  height: 76%;
+  border-radius: 50px;
+  margin-left: 10%;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+.process .process02box .vdo .img_02 video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.process .process02box .vdo .inc {
+  position: absolute;
+  width: 90%;
+  height: 130%;
+  margin-top: -10%;
+  z-index: 99;
+  background-image: url(../img/hover潑墨.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.process .process02box .fontbox_02 {
+  width: 50%;
+  margin-top: 3%;
+}
+
+.process .process02box .fontbox_02 .num {
+  width: 100%;
+  font-size: 120px;
+  color: #bba78f;
+  margin-top: 40.23%;
+  text-align: left;
+  font-weight: normal;
+  font-family: KouzanBrushFont;
+}
+
+.process .process02box .fontbox_02 h1 {
+  width: calc(100% + 50px);
+  font-size: 80px;
+  color: #707070;
+  font-family: KouzanBrushFont;
+  font-weight: normal;
+  margin-top: -70px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.process .process02box .fontbox_02 .font02 {
+  width: 100%;
+  height: 260px;
+  font-size: 36px;
+  white-space: pre-wrap;
+  text-align: left;
+  color: #707070;
+  z-index: 999;
+}
+
+@media (max-width: 1300px) and (min-width: 768px) {
+  .process .titlebox {
+    height: 110px;
+    margin-top: -18vh;
+  }
+  .process .titlebox h1 {
+    font-size: 55px;
+    margin: auto;
+    letter-spacing: 5px;
+  }
+  .process .titlebox h2 {
+    display: none;
+  }
+  .process .process01box .fontbox_01 {
+    width: 50%;
+  }
+  .process .process01box .fontbox_01 .num {
+    font-size: 90px;
+  }
+  .process .process01box .fontbox_01 h1 {
+    font-size: 70px;
+    margin-top: -50px;
+    width: 100%;
+  }
+  .process .process01box .fontbox_01 .font01 {
+    font-size: 20px;
+    margin-left: -20px;
+  }
+  .process .process02box .fontbox_02 {
+    width: 50%;
+  }
+  .process .process02box .fontbox_02 .num {
+    font-size: 90px;
+  }
+  .process .process02box .fontbox_02 h1 {
+    font-size: 70px;
+    margin-top: -50px;
+  }
+  .process .process02box .fontbox_02 .font02 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  .process .titlebox {
+    height: 100px;
+  }
+  .process .titlebox h1 {
+    font-size: 55px;
+    margin: auto;
+    letter-spacing: 5px;
+  }
+  .process .titlebox h2 {
+    display: none;
+  }
+  .process .process01box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 10%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .process .process01box .fontbox_01 {
+    width: 65%;
+    margin: auto;
+    margin-top: 10%;
+  }
+  .process .process01box .fontbox_01 .num {
+    margin: auto;
+    font-size: 75px;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .process .process01box .fontbox_01 h1 {
+    width: 100%;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    margin-top: -50px;
+  }
+  .process .process01box .fontbox_01 .font01 {
+    margin: auto;
+    margin-top: 70px;
+    font-size: 26px;
+    height: 250px;
+    width: 100%;
+  }
+  .process .process01box .vdo {
+    display: block;
+    clear: both;
+    position: relative;
+    margin: auto;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  .process .process01box .vdo .img_01 {
+    margin: 0px;
+  }
+  .process .process01box .vdo .inc {
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    height: 130%;
+    margin-top: -9%;
+    margin-left: -10%;
+    z-index: 99;
+    background-image: url(../img/hover潑墨.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .process .process02box {
+    margin-top: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100px;
+  }
+  .process .process02box .fontbox_02 {
+    width: 65%;
+    margin: auto;
+  }
+  .process .process02box .fontbox_02 .num {
+    margin: auto;
+    font-size: 75px;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .process .process02box .fontbox_02 h1 {
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    margin-top: -50px;
+    padding-left: 0px;
+    margin-left: -30px;
+  }
+  .process .process02box .fontbox_02 .font02 {
+    margin: auto;
+    margin-top: 70px;
+    font-size: 26px;
+    height: 250px;
+    width: 100%;
+  }
+  .process .process02box .vdo {
+    clear: both;
+    position: relative;
+    margin: auto;
+    right: -20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    width: 90%;
+    height: 90%;
+  }
+  .process .process02box .vdo .img_02 {
+    margin: 0px;
+  }
+  .process .process02box .vdo .inc {
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    height: 130%;
+    margin-top: -9%;
+    margin-left: -10%;
+    z-index: 99;
+    background-image: url(../img/hover潑墨.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 375px) {
+  .process .titlebox {
+    height: 100px;
+  }
+  .process .titlebox h1 {
+    font-size: 40px;
+    margin: auto;
+    letter-spacing: 5px;
+  }
+  .process .titlebox h2 {
+    display: none;
+  }
+  .process .bar {
+    width: 100%;
+    margin: 0px;
+    margin: auto;
+  }
+  .process .process01box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: -1vh;
+  }
+  .process .process01box .fontbox_01 {
+    width: 100%;
+    margin: auto;
+  }
+  .process .process01box .fontbox_01 .num {
+    margin: auto;
+    font-size: 110px;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .process .process01box .fontbox_01 h1 {
+    width: 100%;
+    font-size: 55px;
+    margin: auto;
+    text-align: center;
+    margin-top: -80px;
+  }
+  .process .process01box .fontbox_01 .font01 {
+    margin: auto;
+    margin-top: 70px;
+    font-size: 26px;
+    height: 100%;
+    width: 100%;
+  }
+  .process .process01box .vdo {
+    display: block;
+    clear: both;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-left: 15%;
+    margin-top: 20%;
+  }
+  .process .process01box .vdo .img_01 {
+    margin: 0px;
+  }
+  .process .process01box .vdo .inc {
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    height: 130%;
+    margin-top: -9%;
+    margin-left: -10%;
+    z-index: 99;
+    background-image: url(../img/hover潑墨.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .process .process02box {
+    margin-top: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: -1vh;
+  }
+  .process .process02box .fontbox_02 {
+    width: 100%;
+    margin: auto;
+  }
+  .process .process02box .fontbox_02 .num {
+    margin: auto;
+    font-size: 110px;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .process .process02box .fontbox_02 h1 {
+    font-size: 55px;
+    margin: auto;
+    text-align: center;
+    margin-top: -80px;
+    padding-left: 0px;
+    margin-left: -30px;
+  }
+  .process .process02box .fontbox_02 .font02 {
+    margin: auto;
+    margin-top: 70px;
+    font-size: 26px;
+    height: 100%;
+    width: 100%;
+  }
+  .process .process02box .vdo {
+    clear: both;
+    position: relative;
+    margin: auto;
+    margin-right: 20%;
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+  }
+  .process .process02box .vdo .img_02 {
+    margin: 0px;
+  }
+  .process .process02box .vdo .inc {
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    height: 130%;
+    margin-top: -9%;
+    margin-left: -10%;
+    z-index: 99;
+    background-image: url(../img/hover潑墨.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.Transitions {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Transitions .imgbox01 {
+  width: 34.9vw;
+  height: 87.1vh;
+  margin-top: 9vh;
+  background-image: url(../img/最後過廠/IMG_1243.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.Transitions .imgbox01 .src {
+  width: 20vw;
+  padding-top: calc(87.1vh + 7.71vh);
+  padding-left: calc(17.5vw);
+  line-height: 12px;
+}
+
+.Transitions .logo {
+  width: 7.355vw;
+  height: 75.92vh;
+  background-image: url(../img/logo_black.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 36.77vh;
+  margin-left: 10.5vw;
+  margin-right: 16vw;
+}
+
+.Transitions .logo .name {
+  white-space: nowrap;
+  width: 10.5vw;
+  padding-top: 80px;
+  padding-left: 8.85vw;
+}
+
+.Transitions .imgbox02 {
+  width: 29vw;
+  height: 84.22vh;
+  margin-bottom: -2px;
+  margin-top: 84.22vh;
+  background-image: url(../img/最後過廠/IMG_下面.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+@media (max-width: 1400px) and (min-width: 1100px) {
+  .Transitions .imgbox01 {
+    height: 67.1vh;
+  }
+  .Transitions .imgbox01 .src {
+    padding-top: calc(67.1vh + 7.71vh);
+    padding-left: calc(17.5vw);
+    line-height: 12px;
+  }
+  .Transitions .imgbox02 {
+    height: 55.92vh;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 768px) {
+  .Transitions .imgbox01 {
+    height: 47.1vh;
+  }
+  .Transitions .imgbox01 .src {
+    padding-top: calc(47.1vh + 7.71vh);
+    padding-left: calc(17.5vw);
+    line-height: 12px;
+  }
+  .Transitions .imgbox02 {
+    height: 35.92vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .Transitions .imgbox01 {
+    width: 50%;
+    height: 50vh;
+    margin-left: 50%;
+  }
+  .Transitions .imgbox01 .src {
+    display: none;
+  }
+  .Transitions .logo {
+    width: 46px;
+    height: 55.92vh;
+    margin-left: 22%;
+    background-image: url(../img/logo_black.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -50vh;
+    margin-right: 0vw;
+  }
+  .Transitions .logo .name {
+    white-space: nowrap;
+    padding-top: 40vh;
+    padding-left: 0%;
+    width: 150px;
+    text-align: center;
+    margin-left: -125%;
+  }
+  .Transitions .imgbox02 {
+    width: 50%;
+    height: 50vh;
+    margin-top: 5%;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+footer .footer-h1 {
+  margin-top: 130px;
+  margin-bottom: 45px;
+  font-weight: unset;
+  font-size: 40px;
+  color: white;
+}
+
+footer input[type="text"] {
+  width: 500px;
+  height: 40px;
+  padding: 5px auto;
+  margin: auto;
+  border: 0.5px white solid;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+footer input:-ms-input-placeholder {
+  text-align: center;
+}
+
+footer input::-ms-input-placeholder {
+  text-align: center;
+}
+
+footer input::placeholder {
+  text-align: center;
+}
+
+footer .contain01 {
+  width: 500px;
+  height: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .contain01 .tel {
+  width: 200px;
+  height: 100%;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+footer .contain01 .tel .phone {
+  font-size: 21px;
+  margin: 0px;
+  text-align: left;
+}
+
+footer .contain01 .tel .time {
+  font-size: 17px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+footer .contain01 .bar {
+  width: 2px;
+  height: 80px;
+  background-color: white;
+  margin-top: 25px;
+  margin-left: -50px;
+}
+
+footer .contain01 .btnbox {
+  width: 160px;
+  height: 60px;
+  padding-left: 40px;
+}
+
+footer .contain01 .btnbox input[type="submit"] {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+}
+
+footer .contain01 .btnbox input[type="submit"]:hover {
+  opacity: 0.9;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer .contain01 .btnbox #button {
+  margin-top: 32.5px;
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  footer .footer-h1 {
+    margin-top: 30px;
+  }
+  footer input[type="text"] {
+    width: 365px;
+    height: 30px;
+  }
+  footer .contain01 {
+    width: 375px;
+  }
+  footer .contain01 .tel .phone {
+    font-size: 16px;
+  }
+  footer .contain01 .tel .time {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  footer .footer-h1 {
+    margin-top: 30px;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  footer .contain01 {
+    width: 90%;
+    margin-top: 25px;
+  }
+  footer .contain01 .tel .phone {
+    font-size: 12px;
+  }
+  footer .contain01 .tel .time {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  footer input[type="text"] {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  .Transitions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Transitions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer {
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

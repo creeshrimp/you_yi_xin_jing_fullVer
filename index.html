@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊藝新境鐵丸石藝</title>
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+
+
+
+
+
+
+    <!-- tailwind output css -->
+    <style>
+        /* ultity */
+        .p-100\% {
+            padding-bottom: 100%;
+        }
+
+        .bg-size-70\% {
+            background-size: 70%;
+        }
+    </style>
+    <link href="css/output.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="css/source.css">
+    <link rel="stylesheet" href="css/material.css">
+    <style>
+        /* --------------------- scroll bar -----------------------*/
+        /* width */
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background-color: white;
+            /* box-shadow: inset 0 0 100px rgb(255, 255, 255);  */
+            /* border-radius: 10px; */
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(200, 200, 200);
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a3a3a3;
+        }
+
+        /* ------------------------ 特效用 ---------------------- */
+
+
+        /* 排版用 */
+        .tittle-text {
+            /* font-size: 2.2rem; */
+            letter-spacing: 0.45rem;
+        }
+
+        .authorContent_line_height {
+            line-height: 1.7;
+        }
+
+        /* author describe */
+        @media (min-width: 1024px) {
+            .author-describe {
+                width: 32vw;
+                margin: auto;
+            }
+
+            .author-describe h1 {
+                font-size: 5vw;
+                line-height: 1;
+            }
+
+            .author-describe h2 {
+                font-size: 2.6vw;
+                line-height: 1;
+            }
+
+            .author-describe h3 {
+                font-size: 1.6vw;
+                line-height: 3.6vw;
+            }
+        }
+
+        /* 垂直文字 */
+        .text-verticle {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+
+        /* scroll line 動畫 */
+        @keyframes scroll01 {
+            0% {
+                top: 0
+            }
+
+            to {
+                top: 60px
+            }
+        }
+
+        .line-animation {
+            animation: scroll01 2s cubic-bezier(.6,0,.2,1) .3s infinite;
+            animation-fill-mode: both;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <main>
+        <!-- banner -->
+        <section class="w-full h-screen bg-center bg-no-repeat bg-black bg-size-70% lg:bg-cover md:bg-fixed flex banner_bg relative">
+            <div class="absolute top-8 md:top-16 right-8 md:right-16 w-8 md:w-14">
+                <img class="w-full" src="img/logo_sign.png" alt="logo_sign">
+                <img class="w-full mt-5" src="img/logo_white.png" alt="logo_white">
+            </div>
+            <div class="m-auto text-white" style="height:509px">
+                <span class="text-center h-full text-xs lg:text-base text-verticle HelveticaNeue">MING JHE CAI</span>
+                <span class="text-center h-full tittle-text text-2xl md:text-4xl mx-5" style="writing-mode: vertical-rl;">石彫り芸術の新しい境界</span>
+            </div>
+            <a class="w-8 md:w-12 absolute top-8 md:top-16 left-8 md:left-16 flex flex-col items-center cursor-pointer">
+                <div class="w-full">
+                    <span class="w-full h-1 bg-white block"></span>
+                    <span class="w-full h-1 bg-white block mt-2"></span>
+                </div>
+                <span class="text-white text-verticle text-xl md:text-4xl mt-2 md:mt-5 HelveticaNeue">MENU</span>
+            </a>
+            <div class="absolute bottom-0 left-1/2 text-white flex flex-col items-center overflow-hidden">
+                <span class="text-verticle text-xs lg:text-base mb-4 HelveticaNeue">SCROLL</span>
+                <span class="block relative line-animation" style="width: 2px; height: 58px;background-color: white;"></span>
+            </div>
+        </section>
+
+        <!-- author -->
+        <section id="author" class="hidden lg:block relative w-full lg:h-screen SourceHanSerif text-gray-700">
+            <div id="feature_curtain" class="w-full h-full absolute bg-cover bg-center bg-fixed z-10 banner_bg">
+                <div id="feature_curtain_filter" class="w-full h-full absolute z-0 opacity-0" style="background-color: black;">
+                </div>
+            </div>
+            <!-- 照片 與 describe -->
+            <div class="w-full h-full absolute inset-0 flex beige_bg">
+                <div class="flex basis-1/2">
+                    <!-- 照片 -->
+                    <span class="p-100% lg:pb-0 w-full bg-cover bg-center bg-top author_bg"></span>
+                </div>
+                <div class="basis-1/2 flex">
+                    <div class="author-describe my-auto">
+                        <h1 class="font-bold text-right">創作者-蔡明哲</h1>
+                        <h2 class="HelveticaNeue text-5xl mt-10 text-right">MING JHE CAI</h2>
+                        <h3 class="mt-24 text-4xl mt-16 indent-12 authorContent_line_height">
+                            素人工藝者與創作者，秉著對大自然「石頭」的熱愛而與孩子開始撿石十餘年，在撿石過程中，悟出撿石的人生哲學，繼而拜師，將一顆顆在大地佇足千萬年的石子，化作無言的禪子。
+                        </h3>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- 塞一段撐空間用 -->
+        <section class="hidden lg:block" style="height: 200vh">200VH</section>
+        <!-- author-static -->
+        <section id="author-static" class="relative w-full lg:h-screen SourceHanSerif text-gray-700">
+            <!-- 照片 與 describe -->
+            <div class="w-full h-full flex flex-col lg:flex-row beige_bg">
+                <div class="flex basis-1/2 p-14 lg:p-0">
+                    <!-- 照片 -->
+                    <span class="p-100% lg:pb-0 w-full bg-cover bg-center bg-top author_bg"></span>
+                </div>
+                <div class="flex basis-1/2 p-14 lg:p-0">
+                    <div class="author-describe my-auto">
+                        <h1 class="font-bold text-4xl text-left lg:text-right">創作者-蔡明哲</h1>
+                        <h2 class="HelveticaNeue text-2xl mt-10 text-left lg:text-right">MING JHE CAI</h2>
+                        <h3 class="mt-24 text-base mt-16 indent-12 authorContent_line_height">
+                            素人工藝者與創作者，秉著對大自然「石頭」的熱愛而與孩子開始撿石十餘年，在檢石過程中，悟出檢石的人生哲學，繼而拜師，將一顆顆在大地佇足千萬年的石子，化作無言的禪子。
+                        </h3>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- 石材介紹 -->
+        <section id="material" class="relative w-full lg:h-screen beige_bg">
+            <h2 class="stone-title KouzanBrushFont text-6xl text-verticle">石介</h2>
+            <div class="stone-container">
+                <div class="stone-card">
+                    <span class="stone-card-sub1">鐵丸石</span>
+                    <span class="stone-card-sub2">VIEW MORE</span>
+                    <img src="img/stone1.png" alt="">
+                </div>
+                <div class="stone-card">
+                    <span class="stone-card-sub1">龜甲石</span>
+                    <span class="stone-card-sub2">VIEW MORE</span>
+                    <img src="img/stone2.png" alt="">
+                </div>
+                <div class="stone-card">
+                    <span class="stone-card-sub1">絲掛石</span>
+                    <span class="stone-card-sub2">VIEW MORE</span>
+                    <img src="img/stone3.png" alt="">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- 霸王 -->
+    <section class="overlord">
+
+        <div class="moonbox lax "></div>
+        <div class="circlelight"></div>
+        <div class="cloud01"></div>
+        <div class="cloud02"></div>
+        <div class="fontbox lax">
+            力拔山兮氣蓋世<br>
+            &emsp;&emsp;時不利兮騅不逝<br>
+            騅不逝兮可奈何<br>
+            &emsp;&emsp;虞兮虞兮奈若何
+        </div>
+
+        <div class="stoneleft lax"></div>
+        <div class="stoneright lax"></div>
+        <div class="base"></div>
+
+    </section>
+    <!-- 墨水過廠 -->
+    <div class="inc"></div>
+    <!-- swiper -->
+    <section class="gallery">
+        <div class="gallerybox">
+            <h1>藝廊</h1>
+            <h2>GALLERY</h2>
+        </div>
+
+        <div class="swiperbox">
+            <div class="swiper mySwiper swiper-pic">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/素背/素背-1.jpg" /></div>
+                    <div class="swiper-slide"><img src="./img/素背/素背-10.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/素背/素背-11.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/素背/素背-12.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/素背/素背-13.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/素背/素背-14.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/素背/素背-15.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/素背/素背-16.jpg"></div>
+                </div>
+            </div>
+            <div class="black-box"></div>
+        </div>
+
+    </section>
+    <!-- 印象 -->
+    <section class="mountain">
+
+        <div class="mountainfont">
+            <div class="len">
+                <h2 id="len2">俗樸應無爭竟人</h2>
+                <h2 id="len1">山幽自足探微處</h2>
+            </div>
+
+            <h1>印象</h1>
+        </div>
+        <!-- 電腦 -->
+        <video class="mask1" autoplay muted loop>
+            <source src="./video/tip4打磨_MOV_AdobeExpress.mp4" type="video/mp4">
+        </video>
+        <!-- 平板 -->
+        <video class="mask2" autoplay muted loop>
+            <source src="./video/tip4打磨（正）.MOV" type="video/mp4">
+        </video>
+        <!-- 手機 -->
+        <video class="mask3" autoplay muted loop>
+            <source src="./video/tip4打磨_手機.mp4" type="video/mp4">
+        </video>
+    </section>
+
+
+    <!-- 四道工序 -->
+    <section class="process">
+        <div class="titlebox">
+            <!-- 的規矩，石的方圓。 -->
+            <h1>四道工序</h1>
+            <h2>藝的規矩，石的方圓。</h2>
+        </div>
+
+        <div class="bar"></div>
+
+        <div class="process01box">
+            <div class="vdo">
+                <div class="inc inc01"></div>
+                <video class="img_01 aaa" muted loop>
+                    <source src="./video/hover影片/tip1取材（正）.MOV" type="video/mp4" />
+                </video>
+            </div>
+
+            <div class="fontbox_01">
+                <div class="num">01</div>
+                <h1>取材</h1>
+                <div class="font01">&emsp;&emsp;取自南投地區的天然石頭，一個好作品從好的材料開始，有時為了取到好的材料甚至會耗時數月。</div>
+            </div>
+        </div>
+
+
+        <div class="process02box">
+            <div class="fontbox_02">
+                <div class="num">02</div>
+                <h1>泡水</h1>
+                <div class="font02">在開始作業之前一定要先泡水，觀察是否有裂痕。裂痕太嚴重的石頭可能會在雕的過程中一分為二。</div>
+            </div>
+
+            <div class="vdo">
+                <div class="inc inc02"></div>
+                <video class="img_02 bbb" muted loop>
+                    <source src="./video/hover影片/tip2泡水（正）.MOV" type="video/mp4" />
+                </video>
+            </div>
+
+        </div>
+
+
+        <div class="process01box">
+            <div class="vdo">
+                <div class="inc inc03"></div>
+                <video class="img_01 ccc" muted loop>
+                    <source src="./video/hover影片/tip3範圍（正）.MOV" type="video/mp4" />
+                </video>
+            </div>
+
+            <div class="fontbox_01">
+                <div class="num">03</div>
+                <h1>劃定範圍</h1>
+                <div class="font01">就跟許多雕刻作業一樣，在開始動工之前需要先將範圍給劃定好。</div>
+            </div>
+        </div>
+
+
+        <div class="process02box">
+
+            <div class="fontbox_02">
+                <div class="num">04</div>
+                <h1>打磨</h1>
+                <div class="font02">就跟許多雕刻作業一樣，在開始動工之前需要先將範圍給劃定好。</div>
+            </div>
+            <div class="vdo">
+                <div class="inc inc04"></div>
+                <video class="img_02 ddd" muted loop>
+                    <source src="./video/hover影片/tip4打磨（正）.MOV" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最後的過場 -->
+    <section class="Transitions">
+        <div class="imgbox01">
+            <div class="src">
+                <div>S</div><br>
+                <div>C</div><br>
+                <div>R</div><br>
+                <div>O</div><br>
+                <div>L</div><br>
+                <div>L</div>
+            </div>
+        </div>
+        <div class="logo">
+            <div class="name">
+                <p id="enname">MING GHE CAI</p>
+                <p id="title">石雕藝術家</p>
+            </div>
+        </div>
+        <div class="imgbox02"></div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <h1 class="footer-h1">
+            C O N T A C T
+        </h1>
+        <form id="form">
+            <div class="field">
+                <div>
+                    <input type="text" name="your-email" id="your-email" placeholder="您的信箱@gmail.com">
+                </div>
+            </div>
+
+            <div class="contain01">
+                <div class="tel">
+                    <p class="phone">Tel:&emsp;0937-776-690</p>
+                    <p class="time">聯絡時間:&emsp;09:00-17:30</p>
+
+                </div>
+                <div class="bar"></div>
+                <div class="btnbox">
+                    <input type="submit" id="button" value="送出   >">
+                    <!-- <input  type="submit" id="button" value="Contact  us       &gt;"  > -->
+                </div>
+            </div>
+        </form>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/scrooth.js"></script>
+    <script>
+        // DOM
+        const AUTHOR = document.querySelector('#author');
+        const FEATURE_CURTAIN = document.querySelector('#feature_curtain');
+        const FEATURE_CURTAIN_FILTER = document.querySelector('#feature_curtain_filter');
+
+        // 視窗相關
+        let pageHeight = window.innerHeight;
+        let pageDistance = window.pageYOffset;
+
+        // 
+        let nowPage = 0;
+        let isPageFeature = false;
+        let pageDirection = "down";
+
+
+        // 上一頁 ， stamp 用來當暫存
+        let lastPage = 0;
+        let stamp = 0;
+
+        // device width
+        let screen;
+
+        // 先檢查一次螢幕大小
+        if(window.matchMedia("(min-width: 1024px)").matches) {
+            screen = 'large';
+        }
+        else {
+            screen = 'small';
+        }
+        console.log(screen);
+        // 視窗resize事件
+        window.onresize = () => {
+            pageHeight = window.innerHeight;
+            // console.log(`pageHeight: ${pageHeight}`);
+            // console.log(screen);
+
+
+            // 檢查現在是哪頁
+
+            // 檢查螢幕大小
+            // 小 => 大
+            if(window.matchMedia("(min-width: 1024px)").matches) {
+                if(screen == 'small'){
+                    if(nowPage < 4){
+                        location.reload();
+                    }
+                }
+            }
+            // 大 => 小
+            else {
+                if(screen == 'large'){
+                    if(nowPage < 2){
+                        location.reload();
+                    }
+                }
+            }
+
+        }
+
+        // 滾動事件
+        window.onscroll = () => {
+
+            // 重抓到頂端的距離
+            pageDistance = window.pageYOffset;
+            console.log(`pageYOffset: ${pageDistance}`);
+            
+            // 當前是第幾頁
+            nowPage = Math.floor(pageDistance / pageHeight);
+            console.log(`nowPage: ${nowPage}`);
+            
+            // 重設 lastPage
+            setLastPage();
+            console.log(`lastPage: ${lastPage}`);
+            
+            if(screen == 'large') {
+                // 如果當前頁面高度應該是Feature頁面
+                if(nowPage >= 1 && nowPage < 4) {
+                    if(isPageFeature == false) {
+                        feature(AUTHOR);
+                        isPageFeature = true;
+                    }
+                    let top = pageDistance - pageHeight;
+                    let rate = top / pageHeight;
+                    let percentage = (rate * 50).toFixed(3);
+                    // 0~50% (page 1 窗簾效果)
+                    if(nowPage == 1) {
+                        FEATURE_CURTAIN.style.width = `${100 - percentage}%`;
+                        FEATURE_CURTAIN_FILTER.style.opacity = rate;
+                    }
+                    // 50%~100% (page 2 淡入淡出效果)
+                    // 重設 top 跟 rate
+                    else if (nowPage == 2) {
+                        // page 2 窗簾寬度一定要是50%
+                        FEATURE_CURTAIN.style.width = '50%';
+                        // 從 nowPage == 3 來的，遮罩淡入
+                        if(lastPage == 3) {
+                            $("#feature_curtain").fadeIn();
+                        }
+                        // top = pageDistance - (2 * pageHeight);
+                        // rate = top / pageHeight;
+                        // FEATURE_CURTAIN_FILTER.style.opacity = rate;
+                    }
+                    // page 3
+                    else if (nowPage == 3) {
+                        // 從 nowPage == 2 來的，遮罩淡出露出作者圖片
+                        if(lastPage == 2) {
+                            $("#feature_curtain").fadeOut();
+                        }
+                        
+                    }
+                    console.log(percentage);
+                }
+                // 當前頁面高度不是Feature頁面
+                else if(nowPage < 1) {
+                    if(isPageFeature == true) {
+                        featureRelease(AUTHOR, 100, 0);
+                        isPageFeature = false;
+                    }
+                }
+                else if(nowPage >= 4) {
+                    if(isPageFeature == true) {
+                        featureRelease(AUTHOR, 50, 1);
+                        isPageFeature = false;
+                    }
+                }
+            }
+        }
+
+
+        function feature(feature) {
+            feature.classList.remove("relative");
+            feature.classList.add("fixed", "z-10", "inset-0"); 
+            
+        }
+        function featureRelease(feature, curtain_width, opacity) {
+            feature.classList.remove("fixed", "z-10", "inset-0");
+            feature.classList.add("relative");
+            // 寬度 透明度 初始化
+            FEATURE_CURTAIN.style.width = `${curtain_width}%`;
+            FEATURE_CURTAIN_FILTER.style.opacity = `${opacity}`;
+        }
+
+
+        function setLastPage() {
+            if(nowPage != stamp) {
+                lastPage = stamp;
+                stamp = nowPage;
+            }
+        }
+
+
+
+        const scroll = new Scrooth({
+            element: window,
+            strength: 15,
+            acceleration: 1.5,
+            deceleration: 0.975,
+        });
+    </script>
+
+
+
+    <!-- 霸王 -->
+    <script>
+        window.onload = function () {
+            lax.init()
+
+            // Add a driver that we use to control our animations
+            lax.addDriver('scrollY', function () {
+                return window.scrollY
+            })
+
+            // Add animation bindings to elements將動畫綁定添加到元素
+            lax.addElements('.cloud02', {
+                scrollY: {
+                    translateX: [
+                        ["elInY", "elCenterY+0", "elOutY"],
+                        [0, 0, 'screenWidth/1.8'],
+                    ]
+                }
+            })
+            lax.addElements('.cloud01', {
+                scrollY: {
+                    translateX: [
+                        ["elInY", "elCenterY+100", "elOutY"],
+                        [0, 0, '-screenWidth/1.8'],
+                    ]
+                }
+            })
+            lax.addElements('.stoneright', {
+                scrollY: {
+                    translateX: [
+                        ["elInY", "elCenterY-900", "elOutY"],
+                        [0, 10, 'screenWidth/2'],
+                    ]
+                }
+            })
+            lax.addElements('.stoneleft', {
+                scrollY: {
+                    translateX: [
+                        ["elInY", "elCenterY-900", "elOutY"],
+                        [0, 0, '-screenWidth/2'],
+                    ],
+                }
+            })
+            lax.addElements(
+                '.fontbox',  // Element selector rule
+                {             // Animation data
+                    scrollY: {
+                        opacity: [
+                            ["elInY", "elCenterY+350", "elOutY"],
+                            [0, 1, 0],
+                        ]
+                    }
+                },
+            )
+
+
+
+        }
+    </script>
+
+    <!-- Swiper JS-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // 根據視窗自訂一
+            slidesPerView: 'auto',
+            spaceBetween: 25,
+            // loop數量
+            loopedSlides: 8,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            loopFillGroupWithBlank: true,
+            autoplayDisableOnInteraction: false,
+        });
+    </script>
+
+    <!-- 四道工序 -->
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script>
+
+        var aaa = document.querySelector('.aaa');
+        var ccc = document.querySelector('.ccc');
+
+        var bbb = document.querySelector('.bbb');
+        var ddd = document.querySelector('.ddd');
+
+
+        $(function () {
+            $('.inc01').on('mouseenter', function () {
+                if (aaa.paused) aaa.play();
+            }).on('mouseleave', function () {
+                if (!aaa.paused) aaa.pause();
+            });
+            $('.inc03').on('mouseenter', function () {
+                if (ccc.paused) ccc.play();
+            }).on('mouseleave', function () {
+                if (!ccc.paused) ccc.pause();
+            });
+
+
+            $('.inc02').on('mouseenter', function () {
+                if (bbb.paused) bbb.play();
+            }).on('mouseleave', function () {
+                if (!bbb.paused) bbb.pause();
+            });
+            $('.inc04').on('mouseenter', function () {
+                if (ddd.paused) ddd.play();
+            }).on('mouseleave', function () {
+                if (!ddd.paused) ddd.pause();
+            });
+        });
+    </script>
+
+    <!-- 信件js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('eOQ5zsTTWyiD39uU4')
+    </script>
+    <!-- 先弄成註解 信件有次數限制 -->
+    <script>
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_ujgduj9';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = '送出   >';
+                        alert('Sent!');
+                    }, (err) => {
+                        btn.value = '送出   >';
+                        alert(JSON.stringify(err));
+                    });
+            });
+    </script>
+
+</body>
+
+</html>

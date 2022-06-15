@@ -1,0 +1,1956 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url(../img/米色紙漿背景.jpeg);
+    position: relative;
+
+    //前面區塊
+    .box {
+        width: 100%;
+        height: 500px;
+        background-color: cornflowerblue;
+    }
+
+    // 字體
+    @font-face {
+        font-family: "KouzanBrushFont";
+        src: url(../fonts/字體/毛筆字體.ttf);
+    }
+
+    // video
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    .overlord {
+        position: relative;
+        // background-color: black;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
+
+        .moonbox {
+            position: relative;
+            width: 100%;
+            height: 285vh;
+            margin-top: -84.04vh;
+            margin-bottom: 100px;
+            background-image: url(../img/新月亮.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            // 永遠置中
+            background-position: 50% 50%;
+            z-index: 2;
+            overflow: hidden;
+        }
+
+        .cloud01 {
+            position: absolute;
+            width: 60%;
+            height: 60vh;
+            margin-top: -154vh;
+            margin-left: -5%;
+            background-image: url(../img/左雲.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            page-break-before: always;
+            z-index: 3;
+        }
+
+        .cloud02 {
+            position: absolute;
+            width: 60%;
+            height: 60vh;
+            margin-top: -145vh;
+            margin-left: 50%;
+            background-image: url(../img/右雲.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            page-break-before: always;
+            z-index: 3;
+        }
+
+        // .light01 {
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 150vh;
+        //     margin-top: -150vh;
+        //     background-image: url(../img/light/光暈附加.png);
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        //     background-position: 50% 50%;
+        // }
+        // .light02 {
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100vh;
+        //     margin-top: -1100px;
+        //     background-image: url(../img/light/新光暈.png);
+        //     background-repeat: no-repeat;
+        //     background-position: 50% 50%;
+        //     z-index: 1;
+        //     object-fit: cover;
+        // }
+        // .light03 {
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100vh;
+        //     margin-top: -1100px;
+        //     background-image: url(../img/light/柔光.png);
+        //     // background-size: contain;
+        //     background-repeat: no-repeat;
+        //     background-position: 50% 50%;
+        //     z-index: 1;
+        //     object-fit: cover;
+        // }
+
+        .stoneleft {
+            position: absolute;
+            width: 30%;
+            height: 70vh;
+            margin-top: -87vh;
+            margin-left: 35%;
+            background-image: url(../img/霸王.png);
+            // background-size: contain;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        .stoneright {
+            position: absolute;
+            width: 30%;
+            height: 65vh;
+            margin-top: -80vh;
+            margin-left: 50%;
+            background-image: url(../img/別姬.png);
+            // background-size: contain;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            z-index: 2;
+        }
+
+        .base {
+            position: absolute;
+            width: 100%;
+            height: 20vh;
+            background-image: url(../img/展示台.png);
+            margin-top: -25vh;
+            // background-size: contain;
+            background-size: cover;
+            background-repeat: no-repeat;
+            // 永遠置中
+            background-position: 50% 50%;
+            z-index: 0;
+        }
+
+        .fontbox {
+            position: absolute;
+            width: 100%;
+            margin-left: -33%;
+            margin-top: -90vh;
+            letter-spacing: 0.25em;
+            line-height: 2;
+            font-size: 40px;
+            font-weight: bolder;
+            text-shadow: 0.01em 0.05em#fff;
+            color: #707070;
+            writing-mode: vertical-rl;
+            z-index: 99;
+            font-family: SimSun;
+        }
+    }
+
+    .inc {
+        position: absolute;
+        width: 100%;
+        height: 35vh;
+
+        background-image: url(../img/電腦墨水.png);
+        margin-top: -5vh;
+        // background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // 永遠置中
+        background-position: 50% 50%;
+        z-index: 0;
+    }
+
+    @media (max-width: 1500px) and (min-width: 1200px) {
+        .overlord {
+            .moonbox {
+                width: 100%;
+                height: 285vh;
+                margin-top: -88vh;
+                margin-bottom: -50px;
+            }
+
+            .cloud01 {
+                position: absolute;
+                width: 50%;
+                height: 50vh;
+                margin-top: -145vh;
+                margin-left: 0%;
+            }
+
+            .cloud02 {
+                width: 50%;
+                height: 50vh;
+                margin-top: -135vh;
+                margin-left: 50%;
+            }
+
+            .stoneleft {
+                position: absolute;
+                width: 25%;
+
+                margin-top: -95vh;
+                margin-left: 35%;
+            }
+
+            .stoneright {
+                position: absolute;
+                width: 30%;
+
+                margin-top: -90vh;
+                margin-left: 50%;
+            }
+
+            .fontbox {
+                position: absolute;
+                width: 100%;
+
+                margin-top: -90vh;
+                font-size: 30px;
+            }
+
+            .base {
+                position: absolute;
+                width: 100%;
+                height: 20vh;
+                background-image: url(../img/展示台.png);
+                margin-top: -35vh;
+                // background-size: contain;
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                z-index: 0;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) and (min-width: 1000px) {
+        .overlord {
+            .moonbox {
+                width: 100%;
+                height: 285vh;
+                margin-top: -88vh;
+                margin-bottom: -50px;
+            }
+
+            .cloud01 {
+                width: 50%;
+                height: 50vh;
+                margin-top: -140vh;
+                margin-left: 0%;
+            }
+
+            .cloud02 {
+                width: 50%;
+                height: 50vh;
+                margin-top: -135vh;
+                margin-left: 50%;
+            }
+
+            .stoneleft {
+                position: absolute;
+                width: 25%;
+                height: 51vh;
+                margin-top: -77vh;
+                margin-left: 35%;
+            }
+
+            .stoneright {
+                position: absolute;
+                width: 25%;
+                height: 50vh;
+                margin-top: -75vh;
+                margin-left: 50%;
+            }
+
+            .fontbox {
+                position: absolute;
+                width: 100%;
+
+                margin-top: -90vh;
+                font-size: 30px;
+            }
+
+            .base {
+                position: absolute;
+                width: 100%;
+                height: 20vh;
+                background-image: url(../img/展示台.png);
+                margin-top: -35vh;
+                // background-size: contain;
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                z-index: 0;
+            }
+        }
+    }
+
+    @media (max-width: 1000px) and (min-width: 768px) {
+        .overlord {
+            .moonbox {
+                width: 100%;
+                height: 285vh;
+                margin-top: -88vh;
+                margin-bottom: -50px;
+            }
+
+            .cloud01 {
+                width: 50%;
+                height: 50vh;
+                margin-top: -140vh;
+                margin-left: 0%;
+            }
+
+            .cloud02 {
+                width: 50%;
+                height: 50vh;
+                margin-top: -135vh;
+                margin-left: 50%;
+            }
+
+            .stoneleft {
+                position: absolute;
+                width: 20%;
+                height: 41vh;
+                margin-top: -77vh;
+                margin-left: 35%;
+            }
+
+            .stoneright {
+                position: absolute;
+                width: 20%;
+                height: 40vh;
+                margin-top: -77vh;
+                margin-left: 50%;
+            }
+
+            .fontbox {
+                position: absolute;
+                width: 100%;
+                margin-top: -110vh;
+                margin-left: -20vw;
+                font-size: 30px;
+            }
+
+            .base {
+                position: absolute;
+                width: 100%;
+                height: 20vh;
+                background-image: url(../img/展示台.png);
+                margin-top: -52vh;
+                // background-size: contain;
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                z-index: 0;
+            }
+        }
+    }
+
+    @media (max-width: 767px) and (min-width: 450px) {
+        .overlord {
+            .moonbox {
+                width: 100%;
+                height: 205vh;
+                margin-top: -68vh;
+                margin-bottom: 100px;
+            }
+
+            .cloud01 {
+                width: 50%;
+                height: 50vh;
+                margin-top: -100vh;
+                margin-left: 0%;
+            }
+
+            .cloud02 {
+                width: 50%;
+                height: 50vh;
+                margin-top: -95vh;
+                margin-left: 50%;
+            }
+
+            .stoneleft {
+                position: absolute;
+                width: 20%;
+                height: 41vh;
+                margin-top: -47vh;
+                margin-left: 35%;
+            }
+
+            .stoneright {
+                position: absolute;
+                width: 20%;
+                height: 40vh;
+                margin-top: -47vh;
+                margin-left: 50%;
+            }
+
+            .fontbox {
+                position: absolute;
+                width: 100%;
+                margin-top: -75vh;
+                margin-left: -20vw;
+                font-size: 30px;
+            }
+
+            .base {
+                width: 100%;
+                height: 20vh;
+                background-image: url(../img/展示台.png);
+                margin-top: -22vh;
+                // background-size: contain;
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                z-index: 0;
+            }
+        }
+    }
+
+    @media (max-width: 450px) and (min-width: 375px) {
+        .overlord {
+            .moonbox {
+                width: 100%;
+                height: 205vh;
+                margin-top: -68vh;
+                margin-bottom: 100px;
+            }
+
+            .cloud01 {
+                width: 50%;
+                height: 50vh;
+                margin-top: -115vh;
+                margin-left: 0%;
+            }
+
+            .cloud02 {
+                width: 50%;
+                height: 50vh;
+                margin-top: -110vh;
+                margin-left: 50%;
+            }
+
+            .stoneleft {
+                position: absolute;
+                width: 15%;
+                height: 41vh;
+                margin-top: -50vh;
+                margin-left: 35%;
+            }
+
+            .stoneright {
+                position: absolute;
+                width: 15%;
+                height: 40vh;
+                margin-top: -50vh;
+                margin-left: 50%;
+            }
+
+            .fontbox {
+                position: absolute;
+                width: 100%;
+                margin-top: -90vh;
+                margin-left: -20vw;
+                font-size: 20px;
+            }
+
+            .base {
+                width: 100%;
+                height: 20vh;
+                background-image: url(../img/展示台.png);
+                margin-top: -40vh;
+                // background-size: contain;
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                z-index: 0;
+            }
+        }
+    }
+
+    @media (max-width: 375px) {
+        .overlord {
+            .moonbox {
+                width: 100%;
+                height: 180vh;
+                margin-top: -68vh;
+                margin-bottom: 100px;
+            }
+
+            .cloud01 {
+                width: 50%;
+                height: 50vh;
+                margin-top: -105vh;
+                margin-left: 0%;
+            }
+
+            .cloud02 {
+                width: 50%;
+                height: 50vh;
+                margin-top: -100vh;
+                margin-left: 50%;
+            }
+
+            .stoneleft {
+                position: absolute;
+                width: 20%;
+                height: 31vh;
+                margin-top: -38vh;
+                margin-left: 35%;
+            }
+
+            .stoneright {
+                position: absolute;
+                width: 20%;
+                height: 30vh;
+                margin-top: -38vh;
+                margin-left: 50%;
+            }
+
+            .fontbox {
+                position: absolute;
+                width: 100%;
+                margin-top: -75vh;
+                margin-left: -14vw;
+                font-size: 20px;
+                text-shadow: 0.01em 0.05em#fff;
+            }
+
+            .base {
+                width: 100%;
+                height: 20vh;
+                background-image: url(../img/展示台.png);
+                margin-top: -22vh;
+                // background-size: contain;
+                background-size: contain;
+                background-repeat: no-repeat;
+                z-index: 0;
+            }
+        }
+    }
+
+    //藝廊
+    .gallery {
+        //之後要改寬 RWD
+        width: 100%;
+        height: 100%;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin-top: 25vh;
+
+        // 藝廊區塊
+        .gallerybox {
+            width: 100%;
+            height: 320px;
+
+            h1 {
+                width: 550px;
+                height: 90px;
+                font-size: 150px;
+                font-weight: 300;
+                letter-spacing: 90px;
+                font-family: KouzanBrushFont;
+                color: #707070;
+                padding-top: 52px;
+                margin-left: 200px;
+            }
+
+            h2 {
+                width: 310px;
+                height: 60px;
+                font-size: 60px;
+                font-weight: 300;
+                color: #a69e96;
+                margin-top: 165px;
+                margin-left: 300px;
+            }
+        }
+
+        .swiperbox {
+            width: 100%;
+            height: 640px;
+            position: relative;
+
+            // 8方塊的效果
+            .swiper-pic {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+
+                //1n = 全部
+                //2n+1 = 2468向下
+                //2n = 1 3 5 7 9 往下
+                //3n = 3 7 往下
+                //4n = 3 7往下
+                // //2n+1 = 2468向下
+                // 4n+a = 地a a+4個方塊樣式
+                .swiper-slide:nth-child(4n + 4) {
+                    margin-top: 15px;
+                    height: 400px;
+                    width: 470px;
+                }
+
+                .swiper-slide:nth-child(4n + 3) {
+                    margin-top: 235px;
+                    height: 365px;
+                    width: 365px;
+                }
+
+                .swiper-slide:nth-child(4n + 2) {
+                    margin-top: 95px;
+                    width: 360px;
+                    height: 360px;
+                }
+
+                .swiper-slide:nth-child(4n + 1) {
+                    margin-top: 50px;
+                    height: 350px;
+                    width: 300px;
+                }
+            }
+
+            // 8方塊顏色 屬性
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: rgb(252, 81, 81);
+
+                /* Center slide text vertically */
+                // display: -webkit-box;
+                // display: -ms-flexbox;
+                // display: -webkit-flex;
+                // display: flex;
+                // -webkit-box-pack: center;
+                // -ms-flex-pack: center;
+                // -webkit-justify-content: center;
+                // justify-content: center;
+                // -webkit-box-align: center;
+                // -ms-flex-align: center;
+                // -webkit-align-items: center;
+                // align-items: center;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            // 黑色方塊
+            .black-box {
+                width: 590px;
+                height: 100%;
+                //顏色待調整
+                background-color: rgba(107, 107, 107, 0.928);
+            }
+        }
+
+        @media (max-width: 768px) and (min-width: 375px) {
+            .gallerybox {
+                h1 {
+                    width: 100px;
+                    height: 500px;
+                    margin-left: 45%;
+                    writing-mode: vertical-lr;
+                    letter-spacing: 20px;
+                    font-size: 80px;
+                }
+
+                h2 {
+                    width: 310px;
+                    height: 60px;
+                    font-size: 60px;
+
+                    margin-top: -250px;
+                    margin-left: 60px;
+                }
+            }
+
+            .swiperbox {
+                width: 100%;
+                height: 500px;
+                position: relative;
+
+                // 8方塊的效果
+                .swiper-pic {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+
+                    .swiper-slide:nth-child(4n + 4) {
+                        margin-top: 3px;
+                        height: 300px;
+                        width: 370px;
+                    }
+
+                    .swiper-slide:nth-child(4n + 3) {
+                        margin-top: 110px;
+                        height: 265px;
+                        width: 265px;
+                    }
+
+                    .swiper-slide:nth-child(4n + 2) {
+                        margin-top: 38px;
+                        width: 260px;
+                        height: 260px;
+                    }
+
+                    .swiper-slide:nth-child(4n + 1) {
+                        margin-top: 20px;
+                        height: 250px;
+                        width: 200px;
+                    }
+                }
+
+                // 8方塊顏色 屬性
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                // 黑色方塊
+                .black-box {
+                    width: 375px;
+                    height: 375px;
+                    top: -30%;
+                    //顏色待調整
+                    background-color: rgba(107, 107, 107, 0.928);
+                }
+            }
+        }
+
+        @media (max-width: 375px) {
+            .gallerybox {
+                h1 {
+                    width: 100px;
+                    height: 500px;
+                    margin-left: 40%;
+                    writing-mode: vertical-lr;
+                    letter-spacing: 20px;
+                    font-size: 80px;
+                }
+
+                h2 {
+                    width: 150px;
+                    height: 40px;
+                    font-size: 40px;
+                    margin-top: -223px;
+                    margin-left: 75px;
+                }
+            }
+
+            .swiperbox {
+                width: 100%;
+                height: 40vh;
+                position: relative;
+
+                // 8方塊的效果
+                .swiper-pic {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+
+                    .swiper-slide:nth-child(4n + 4) {
+                        margin-top: 5px;
+                        height: 240px;
+                        width: 240px;
+                    }
+
+                    .swiper-slide:nth-child(4n + 3) {
+                        margin-top: 60px;
+                        height: 195px;
+                        width: 195px;
+                    }
+
+                    .swiper-slide:nth-child(4n + 2) {
+                        margin-top: 40px;
+                        width: 190px;
+                        height: 190px;
+                    }
+
+                    .swiper-slide:nth-child(4n + 1) {
+                        margin-top: 1px;
+                        height: 170px;
+                        width: 150px;
+                    }
+                }
+
+                // 8方塊顏色 屬性
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                // 黑色方塊
+                .black-box {
+                    width: 250px;
+                    height: 250px;
+                    top: -30%;
+                    //顏色待調整
+                    background-color: rgba(107, 107, 107, 0.928);
+                }
+            }
+        }
+    }
+
+    // 山
+    .mountain {
+        writing-mode: vertical-lr;
+
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+
+        .mountainfont {
+            width: 100%;
+            height: 100vh;
+            margin-top: 8%;
+            font-family: KouzanBrushFont;
+            position: absolute;
+            white-space: nowrap;
+
+            .len {
+                margin-left: 10vw;
+
+                h2 {
+                    font-size: 50px;
+                    color: #808080;
+                    font-weight: normal;
+                }
+
+                #len1 {
+                    margin-top: 0%;
+                }
+
+                #len2 {
+                    padding-top: 5vh;
+                }
+            }
+
+            h1 {
+                position: absolute;
+                right: 5%;
+                margin: -5%;
+                font-size: 140px;
+                font-weight: normal;
+                color: #707070;
+            }
+        }
+
+        .mask1 {
+            background: url("../img/山電腦版.png") no-repeat top center;
+            background-size: cover;
+            -webkit-mask: url("../img/山電腦版.png") no-repeat center center;
+            -webkit-mask: url("../img/山電腦版.png") no-repeat center center;
+            -webkit-mask-size: contain;
+        }
+
+        .mask2 {
+            display: none;
+        }
+
+        @media (max-width: 1500px) and (min-width: 900px) {
+            .mountainfont {
+                .len {
+                    margin-left: 10vw;
+
+                    h2 {
+                        font-size: 30px;
+                        color: #808080;
+                        font-weight: normal;
+                    }
+
+                    #len1 {
+                        margin-top: -5vh;
+                    }
+
+                    #len2 {
+                        padding-top: -5vh;
+                    }
+                }
+
+                h1 {
+                    font-size: 100px;
+                    margin-right: 10px;
+                }
+            }
+
+            .mask1 {
+                margin-top: 20vh;
+            }
+
+            .mask3 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 900px) and (min-width: 769px) {
+            .mountainfont {
+                .len {
+                    margin-left: 10vw;
+
+                    h2 {
+                        font-size: 30px;
+                        color: #808080;
+                        font-weight: normal;
+                    }
+
+                    #len1 {
+                        margin-top: -5vh;
+                    }
+
+                    #len2 {
+                        padding-top: -5vh;
+                    }
+                }
+
+                h1 {
+                    font-size: 100px;
+                }
+            }
+
+            .mask1 {
+                margin-top: 30vh;
+                margin-right: 10px;
+            }
+
+            .mask3 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) and (min-width: 375px) {
+            .mountainfont {
+                width: 100%;
+                height: 100vh;
+                margin-top: -20%;
+                font-family: KouzanBrushFont;
+                position: absolute;
+                white-space: nowrap;
+
+                .len {
+                    margin-left: 35vw;
+                    margin-top: 30vh;
+
+                    h2 {
+                        font-size: 35px;
+                        color: black;
+                        font-weight: normal;
+                    }
+
+                    #len1 {
+                        margin-top: 0%;
+                    }
+
+                    #len2 {
+                        padding-top: 5vh;
+                    }
+                }
+
+                h1 {
+                    position: absolute;
+                    right: 83%;
+                    top: 30%;
+                    font-size: 100px;
+                    font-weight: normal;
+                    color: #707070;
+                }
+            }
+
+            .mask1 {
+                display: none;
+            }
+
+            .mask2 {
+                margin-top: 20vh;
+                width: 150vw;
+                margin-left: 0vw;
+                display: block;
+                background: url("../img/山平板遮罩.png") no-repeat top center;
+                background-size: cover;
+                -webkit-mask: url("../img/山平板遮罩.png") no-repeat center center;
+                mask: url("../img/山平板遮罩.png") no-repeat center center;
+                mask-size: contain;
+                mask-position: 80% 75%;
+                -webkit-mask-size: cover;
+            }
+
+            .mask3 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .mountainfont {
+                width: 100%;
+                height: 100vh;
+                margin-top: -10vh;
+                font-family: KouzanBrushFont;
+                position: absolute;
+                white-space: nowrap;
+
+                .len {
+                    margin-left: 40vw;
+                    margin-top: 32vh;
+
+                    h2 {
+                        font-size: 35px;
+                        color: black;
+                        font-weight: 100;
+                        line-height: 1em;
+                    }
+
+                    #len1 {
+                        margin-top: 0%;
+                    }
+
+                    #len2 {
+                        padding-top: 5vh;
+                    }
+                }
+
+                h1 {
+                    position: absolute;
+                    right: 75%;
+                    top: 20%;
+                    font-size: 80px;
+                    font-weight: normal;
+                    color: #707070;
+                }
+            }
+
+            .mask1 {
+                display: none;
+            }
+
+            .mask2 {
+                display: none;
+            }
+
+            .mask3 {
+                margin-top: 30vh;
+                height: 100vh;
+                width: 150vw;
+                margin-left: 0vw;
+                display: block;
+                background: url("../img/山手機遮罩.png") no-repeat top center;
+                background-size: cover;
+                -webkit-mask: url("../img/山手機遮罩.png") no-repeat center center;
+                mask: url("../img/山手機遮罩.png") no-repeat center center;
+                mask-size: contain;
+                -webkit-mask-size: cover;
+            }
+        }
+    }
+
+}
+
+//4工序
+.process {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+
+    .titlebox {
+        width: 100%;
+        height: 275px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        //1.47
+        h1 {
+            font-size: 95px;
+            letter-spacing: 30px;
+            text-align: center;
+            font-weight: normal;
+            color: #707070;
+            font-family: KouzanBrushFont;
+        }
+
+        // RWD文字問題
+        h2 {
+            position: absolute;
+            font-size: 35px;
+            margin-top: 135px;
+            margin-left: 70%;
+            font-weight: normal;
+
+            text-align: center;
+            font-family: "KouzanBrushFont";
+        }
+    }
+
+    .bar {
+        width: 80.1%;
+        height: 2px;
+        background-color: #707070;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .process01box {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        padding-top: 7%;
+        align-items: center;
+        flex-direction: row;
+        margin: auto;
+        margin-bottom: 200px;
+        //為了使用影片遮罩潑墨
+
+        .vdo {
+            position: relative;
+            width: 90%;
+            height: 90%;
+
+            .img_01 {
+                width: 76%;
+                height: 76%;
+                border-radius: 50px;
+                clip-path: circle(50% at 50% 50%);
+
+                // background-color: black;
+                video {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .inc {
+                position: absolute;
+                width: 90%;
+                height: 130%;
+                margin-top: -9%;
+                margin-left: -10%;
+                z-index: 99;
+                background-image: url(../img/hover潑墨.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .vdorwd {
+            display: none;
+        }
+
+        .fontbox_01 {
+            width: 50%;
+
+            .num {
+                width: 100%;
+                font-size: 120px;
+                color: #bba78f;
+                text-align: right;
+                font-weight: normal;
+                font-family: KouzanBrushFont;
+            }
+
+            h1 {
+                width: calc(100% - 50px);
+                font-size: 80px;
+                color: #707070;
+                font-family: KouzanBrushFont;
+                margin-top: -70px;
+                font-weight: normal;
+                text-align: right;
+            }
+
+            .font01 {
+                width: 100%;
+
+                margin-left: -80px;
+                margin-top: -10px;
+                font-size: 36px;
+                white-space: pre-wrap;
+                color: #707070;
+                z-index: 999;
+            }
+        }
+    }
+
+    .process02box {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 200px;
+
+        .vdo {
+            position: relative;
+            width: 90%;
+            height: 90%;
+            right: -15%;
+
+            .img_02 {
+                width: 76%;
+                height: 76%;
+                border-radius: 50px;
+                margin-left: 10%;
+                clip-path: circle(50% at 50% 50%);
+
+                video {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .inc {
+                position: absolute;
+                width: 90%;
+                height: 130%;
+                margin-top: -10%;
+
+                z-index: 99;
+                background-image: url(../img/hover潑墨.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .fontbox_02 {
+            width: 50%;
+            margin-top: 3%;
+
+            .num {
+                width: 100%;
+                font-size: 120px;
+                color: #bba78f;
+                margin-top: 40.23%;
+                text-align: left;
+                font-weight: normal;
+                font-family: KouzanBrushFont;
+            }
+
+            h1 {
+                width: calc(100% + 50px);
+                font-size: 80px;
+                color: #707070;
+                font-family: KouzanBrushFont;
+                font-weight: normal;
+                margin-top: -70px;
+                text-align: left;
+                padding-left: 50px;
+            }
+
+            .font02 {
+                width: 100%;
+                height: 260px;
+                font-size: 36px;
+                white-space: pre-wrap;
+                text-align: left;
+                color: #707070;
+                z-index: 999;
+            }
+        }
+    }
+
+    // 1200-768
+    @media (max-width: 1300px) and (min-width: 768px) {
+        .titlebox {
+            height: 110px;
+            margin-top: -18vh;
+            h1 {
+                font-size: 55px;
+                margin: auto;
+                letter-spacing: 5px;
+            }
+
+            h2 {
+                display: none;
+            }
+        }
+
+        .process01box {
+            .fontbox_01 {
+                width: 50%;
+
+                .num {
+                    font-size: 90px;
+                }
+
+                h1 {
+                    font-size: 70px;
+                    margin-top: -50px;
+                    width: 100%;
+                }
+
+                .font01 {
+                    font-size: 20px;
+                    margin-left: -20px;
+                }
+            }
+        }
+
+        .process02box {
+            .fontbox_02 {
+                width: 50%;
+
+                .num {
+                    font-size: 90px;
+                }
+
+                h1 {
+                    font-size: 70px;
+                    margin-top: -50px;
+                }
+
+                .font02 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    // 768-375
+    @media (max-width: 768px) and (min-width: 375px) {
+        .titlebox {
+            height: 100px;
+
+            h1 {
+                font-size: 55px;
+                margin: auto;
+                letter-spacing: 5px;
+            }
+
+            h2 {
+                display: none;
+            }
+        }
+
+        .process01box {
+            flex-direction: column-reverse;
+            width: 100%;
+            margin-top: 10%;
+            // 把原本的block調
+
+            order: 0;
+
+            .fontbox_01 {
+                width: 65%;
+                margin: auto;
+                margin-top: 10%;
+
+                .num {
+                    margin: auto;
+                    font-size: 75px;
+                    margin-left: 10%;
+                    text-align: center;
+                }
+
+                h1 {
+                    width: 100%;
+                    font-size: 50px;
+                    margin: auto;
+                    text-align: center;
+                    margin-top: -50px;
+                }
+
+                .font01 {
+                    margin: auto;
+                    margin-top: 70px;
+                    font-size: 26px;
+                    height: 250px;
+                    width: 100%;
+                }
+            }
+
+            .vdo {
+                display: block;
+                clear: both;
+                position: relative;
+                margin: auto;
+                margin-left: 20%;
+                margin-top: 10%;
+
+                .img_01 {
+                    margin: 0px;
+                }
+
+                .inc {
+                    position: absolute;
+                    margin: auto;
+                    width: 90%;
+                    height: 130%;
+                    margin-top: -9%;
+                    margin-left: -10%;
+                    z-index: 99;
+                    background-image: url(../img/hover潑墨.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+
+        .process02box {
+            margin-top: 10%;
+            flex-direction: column;
+            margin-top: 100px;
+
+            .fontbox_02 {
+                width: 65%;
+                margin: auto;
+
+                .num {
+                    margin: auto;
+                    font-size: 75px;
+                    margin-left: 10%;
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 50px;
+                    margin: auto;
+                    text-align: center;
+                    margin-top: -50px;
+                    padding-left: 0px;
+                    margin-left: -30px;
+                }
+
+                .font02 {
+                    margin: auto;
+                    margin-top: 70px;
+                    font-size: 26px;
+                    height: 250px;
+                    width: 100%;
+                }
+            }
+
+            .vdo {
+                clear: both;
+                position: relative;
+                margin: auto;
+                right: -20%;
+                margin-right: 20%;
+                margin-top: 10%;
+                width: 90%;
+                height: 90%;
+
+                .img_02 {
+                    margin: 0px;
+                }
+
+                .inc {
+                    position: absolute;
+                    margin: auto;
+                    width: 90%;
+                    height: 130%;
+                    margin-top: -9%;
+                    margin-left: -10%;
+                    z-index: 99;
+                    background-image: url(../img/hover潑墨.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    //375
+    @media (max-width: 375px) {
+        .titlebox {
+            height: 100px;
+
+            h1 {
+                font-size: 40px;
+                margin: auto;
+                letter-spacing: 5px;
+            }
+
+            h2 {
+                display: none;
+            }
+        }
+
+        .bar {
+            width: 100%;
+            margin: 0px;
+            margin: auto;
+        }
+
+        .process01box {
+            flex-direction: column-reverse;
+            width: 100%;
+            margin-top: 10%;
+            // 把原本的block調
+            margin-bottom: -1vh;
+
+            .fontbox_01 {
+                width: 100%;
+                margin: auto;
+
+                .num {
+                    margin: auto;
+                    font-size: 110px;
+                    margin-left: 10%;
+                    text-align: center;
+                }
+
+                h1 {
+                    width: 100%;
+                    font-size: 55px;
+                    margin: auto;
+                    text-align: center;
+                    margin-top: -80px;
+                }
+
+                .font01 {
+                    margin: auto;
+                    margin-top: 70px;
+                    font-size: 26px;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .vdo {
+                display: block;
+                clear: both;
+                position: relative;
+                margin: auto;
+                width: 100%;
+                height: 100%;
+                margin-left: 15%;
+                margin-top: 20%;
+
+                .img_01 {
+                    margin: 0px;
+                }
+
+                .inc {
+                    position: absolute;
+                    margin: auto;
+                    width: 90%;
+                    height: 130%;
+                    margin-top: -9%;
+                    margin-left: -10%;
+                    z-index: 99;
+                    background-image: url(../img/hover潑墨.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+
+        .process02box {
+            margin-top: 10%;
+            flex-direction: column;
+            margin-top: 100px;
+            margin-bottom: -1vh;
+
+            .fontbox_02 {
+                width: 100%;
+                margin: auto;
+
+                .num {
+                    margin: auto;
+                    font-size: 110px;
+                    margin-left: 10%;
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 55px;
+                    margin: auto;
+                    text-align: center;
+                    margin-top: -80px;
+                    padding-left: 0px;
+                    margin-left: -30px;
+                }
+
+                .font02 {
+                    margin: auto;
+                    margin-top: 70px;
+                    font-size: 26px;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .vdo {
+                clear: both;
+                position: relative;
+                margin: auto;
+                margin-right: 20%;
+                margin-top: 20%;
+                width: 100%;
+                height: 100%;
+
+                .img_02 {
+                    margin: 0px;
+                }
+
+                .inc {
+                    position: absolute;
+                    margin: auto;
+                    width: 90%;
+                    height: 130%;
+                    margin-top: -9%;
+                    margin-left: -10%;
+                    z-index: 99;
+                    background-image: url(../img/hover潑墨.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+//過廠
+.Transitions {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+
+    .imgbox01 {
+        width: 34.9vw;
+        // height: 735px;
+        //1:8.43px
+        height: 87.1vh;
+
+        margin-top: 9vh;
+        background-image: url(../img/最後過廠/IMG_1243.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        // 避免圖片變形
+        background-position: center;
+
+        .src {
+            width: 20vw;
+            padding-top: calc(87.1vh + 7.71vh);
+            padding-left: calc(17.5vw);
+            line-height: 12px;
+        }
+    }
+
+    .logo {
+        width: 7.355vw;
+        height: 75.92vh;
+        background-image: url(../img/logo_black.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 36.77vh;
+        margin-left: 10.5vw;
+        margin-right: 16vw;
+
+        .name {
+            white-space: nowrap;
+            width: 10.5vw;
+            padding-top: 80px;
+            padding-left: 8.85vw;
+        }
+    }
+
+    .imgbox02 {
+        width: 29vw;
+        height: 84.22vh;
+        margin-bottom: -2px;
+        margin-top: 84.22vh;
+        background-image: url(../img/最後過廠/IMG_下面.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    @media (max-width: 1400px) and (min-width: 1100px) {
+        .imgbox01 {
+            height: 67.1vh;
+
+            .src {
+                padding-top: calc(67.1vh + 7.71vh);
+                padding-left: calc(17.5vw);
+                line-height: 12px;
+            }
+        }
+
+        .imgbox02 {
+            height: 55.92vh;
+        }
+    }
+
+    @media (max-width: 1100px) and (min-width: 768px) {
+        .imgbox01 {
+            height: 47.1vh;
+
+            .src {
+                padding-top: calc(47.1vh + 7.71vh);
+                padding-left: calc(17.5vw);
+                line-height: 12px;
+            }
+        }
+
+        .imgbox02 {
+            height: 35.92vh;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .imgbox01 {
+            width: 50%;
+            height: 50vh;
+            margin-left: 50%;
+
+            .src {
+                display: none;
+            }
+        }
+
+        .logo {
+            width: 46px;
+            height: 55.92vh;
+            margin-left: 22%;
+            background-image: url(../img/logo_black.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: -50vh;
+
+            margin-right: 0vw;
+
+            .name {
+                white-space: nowrap;
+
+                padding-top: 40vh;
+                padding-left: 0%;
+                width: 150px;
+                text-align: center;
+                margin-left: -125%;
+            }
+        }
+
+        .imgbox02 {
+            width: 50%;
+            height: 50vh;
+            margin-top: 5%;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    //336px
+    height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .footer-h1 {
+        //78
+        margin-top: 130px;
+        //48
+        margin-bottom: 45px;
+        font-weight: unset;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+    }
+
+    // input屬性設定
+    input[type="text"] {
+        // 500*40
+        width: 500px;
+        height: 40px;
+        padding: 5px auto;
+
+        margin: auto;
+        border: 0.5px rgb(255, 255, 255) solid;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+
+    }
+
+    input::placeholder {
+        text-align: center;
+    }
+
+    .contain01 {
+        width: 500px;
+        height: 50%;
+        margin: auto;
+        display: flex;
+
+        justify-content: space-between;
+
+        .tel {
+            width: 200px;
+            height: 100%;
+            color: white;
+            justify-content: center;
+            margin-top: 30px;
+
+            .phone {
+                //38
+
+                font-size: 21px;
+                margin: 0px;
+                text-align: left;
+            }
+
+            .time {
+                font-size: 17px;
+                margin-top: 10px;
+                text-align: left;
+            }
+        }
+
+        // 4*60
+        .bar {
+            width: 2px;
+            height: 80px;
+            background-color: white;
+            margin-top: 25px;
+            margin-left: -50px;
+        }
+
+        .btnbox {
+            width: 160px;
+            height: 60px;
+            padding-left: 40px;
+
+            input[type="submit"] {
+                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+
+                font-size: 20px;
+                color: black;
+                background-color: white;
+            }
+
+            input[type="submit"]:hover {
+                opacity: 0.9;
+                transform: scale(1.1);
+            }
+
+            #button {
+                margin-top: 32.5px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) and (min-width: 375px) {
+        .footer-h1 {
+            margin-top: 30px;
+        }
+
+        input[type="text"] {
+            // 500*40
+            width: 365px;
+            height: 30px;
+        }
+
+        .contain01 {
+            width: 375px;
+
+            .tel {
+                .phone {
+                    font-size: 16px;
+                }
+
+                .time {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 375px) {
+        .footer-h1 {
+            margin-top: 30px;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .contain01 {
+            width: 90%;
+            margin-top: 25px;
+
+            .tel {
+                .phone {
+                    font-size: 12px;
+                }
+
+                .time {
+                    margin-top: 20px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        input[type="text"] {
+            width: 90%;
+        }
+    }
+}
+
+// 調整section大小的地方
+@media (max-width: 768px) and (min-width: 375px) {
+    .Transitions {
+        flex-direction: column;
+    }
+
+    footer {
+        height: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    .Transitions {
+        flex-direction: column;
+    }
+
+    footer {
+        height: 300px;
+    }
+}

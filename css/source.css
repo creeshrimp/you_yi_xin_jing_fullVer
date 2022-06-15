@@ -1,0 +1,80 @@
+/* 
+        🥓字體 
+*/
+@font-face {
+    font-family: SourceHanSerif;
+    src: url(../font/source-han-serif-1.001R/OTF/TraditionalChinese/SourceHanSerifTC-Regular.otf);
+    src: url(../font/source-han-serif-1.001R/OTF/TraditionalChinese/SourceHanSerifTC-Regular.otf) format(otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: SourceHanSerif;
+    src: url(../font/source-han-serif-1.001R/OTF/TraditionalChinese/SourceHanSerifTC-Bold.otf);
+    src: url(../font/source-han-serif-1.001R/OTF/TraditionalChinese/SourceHanSerifTC-Bold.otf) format(otf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../font/Helvetica-Neue-Font/Helvetica_Neue_Medium_Extended.otf);
+    src: url(../font/Helvetica-Neue-Font/Helvetica_Neue_Medium_Extended.otf) format(otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: HelveticaNeue_UltraLight;
+    src: url(../font/Helvetica-Neue-Font/Helvetica_Neue_UltraLight.otf);
+    src: url(../font/Helvetica-Neue-Font/Helvetica_Neue_UltraLight.otf) format(otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: KouzanBrushFont;
+    src: url(../font/KouzanBrushFont.ttf);
+    src: url(../font/KouzanBrushFont.ttf) format(otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Noto_Sans;
+    src: url(../font/Noto_Sans_TC/NotoSansTC-Bold.otf);
+}
+.SourceHanSerif {
+    font-family: 'SourceHanSerif';
+}
+.Noto_Sans {
+    font-family: 'Noto_Sans';
+}
+.HelveticaNeue {
+    font-family: 'HelveticaNeue';
+}
+.KouzanBrushFont {
+    font-family: 'KouzanBrushFont';
+}
+
+
+
+/*
+        🎨背景
+ */
+
+/* 米色背景 */
+.beige_bg {
+    background-image: url(../img/beige_bg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* banner */
+.banner_bg {
+    background-image: url(../img/banner_768-2.png);
+}
+@media (min-width: 768px) {
+    .banner_bg {
+        background-image: url(../img/banner.png);
+    }
+}
+.author_bg {
+    background-image: url(../img/author.png);
+}
